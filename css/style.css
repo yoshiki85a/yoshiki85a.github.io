@@ -34,71 +34,79 @@ a:hover {
   right: 0;
   bottom: 0;
   margin: auto;
-
 }
 
 .image1 {
   position: fixed;
   top: 0;
   left: 0;
+  width: 200px;
+  height: 200px;
   z-index: -2;
 }
 
 .image1 img {
   opacity: .5;
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  animation: move 50s infinite;
+  transform: rotate(180deg);
+  animation: move1 20s infinite;
 }
 
 .image2 {
   position: fixed;
   top: 0;
   right: 0;
+  width: 100px;
+  height: 100px;
   z-index: -2;
 }
 
 .image2 img {
   opacity: .5;
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  animation: move 80s infinite;
+  animation: move 25s infinite;
 }
 
 .image3 {
   position: fixed;
   left: 0;
   bottom: 0;
+  width: 100px;
+  height: 100px;
   z-index: -2;
 }
 
 .image3 img {
   opacity: .5;
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  animation: move 30s infinite;
+  animation: move 35s infinite;
 }
 
 .image4 {
   position: fixed;
   right: 0;
   bottom: 0;
+  width: 200px;
+  height: 200px;
   z-index: -2;
 }
 
 .image4 img {
   opacity: .5;
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  animation: move 60s infinite;
+  animation: move2 30s infinite;
 }
 
 @keyframes move {
@@ -113,5 +121,47 @@ a:hover {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes move1 {
+  30% {
+    transform: rotate(160deg) translateX(-100px);
+  }
+  50% {
+    transform: rotate(180deg) translateX(-90px);
+  }
+  70% {
+    transform: rotate(200deg) translateX(-50px);
+  }
+  100% {
+    transform: rotate(180deg) translateX(0);
+  }
+}
+
+@keyframes move2 {
+  30% {
+    transform: rotate(-30deg) translateX(-60px);
+  }
+  50% {
+    transform: rotate(0deg) translateX(-120px);
+  }
+  70% {
+    transform: rotate(20deg) translateX(-50px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
+}
+
+@media (min-width: 600px) {
+  .image1,.image4 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .image2,.image3 {
+    width: 150px;
+    height: 150px;
   }
 }
