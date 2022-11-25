@@ -47,8 +47,8 @@ a:hover {
 .image1 img {
   opacity: .5;
   display: block;
-  width: 320px;
-  height: 320px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
   animation: move 50s infinite;
 }
@@ -63,8 +63,8 @@ a:hover {
 .image2 img {
   opacity: .5;
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   animation: move 80s infinite;
 }
@@ -79,8 +79,8 @@ a:hover {
 .image3 img {
   opacity: .5;
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   animation: move 30s infinite;
 }
@@ -95,8 +95,8 @@ a:hover {
 .image4 img {
   opacity: .5;
   display: block;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
   animation: move 60s infinite;
 }
